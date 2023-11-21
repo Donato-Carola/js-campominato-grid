@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+main{
+    background-color:rgb(127, 255, 212) ;
+    height: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main>span{
+   width: calc(100% / 10);
+
+}
+
+
+
+
