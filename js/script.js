@@ -9,16 +9,19 @@ Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed 
 
 const button = document.querySelector("button");
 const mainGrid = document.querySelector("section");
+const main = document.querySelector('main')
 
 //! Evento aggiunto al button, il quale una volta cliccato compaiono i numeri 
-
+ 
     for (let i = 1; i <= 100; i++) {
     const square = createSquare();
     const randomNumber = i;
     square.innerHTML += `${randomNumber}`;
 
-
     
+    
+    button.addEventListener('click', removeElem)
+
     square.addEventListener('click', function(){
         square.classList.add('bgcolor')
         console.log(i)
@@ -26,10 +29,10 @@ const mainGrid = document.querySelector("section");
     })
   }
 
-  button.addEventListener('click', function(){
-    const spanT = document.querySelector('span');
-    spanT.classList.toggle('removeList')
-  })
+  
+ 
+   
+ 
 
 
 
@@ -47,4 +50,11 @@ function createSquare() {
   const createElemSquare = document.createElement("span");
   mainGrid.appendChild(createElemSquare);
   return createElemSquare;
+}
+
+function removeElem(){
+
+    const elemRemove = document.querySelector('section')
+    elemRemove.classList.toggle('removeList')
+    return elemRemove;
 }
