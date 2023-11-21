@@ -15,16 +15,35 @@ header{
 
 main{
     background-color:rgb(127, 255, 212) ;
-    height: 1000px;
+    
+    
+}
+
+
+section{
+    height: 800px;
+    width: 800px;
+    margin: 0 auto;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    
 }
 
-main>span{
+main>section>span{
    width: calc(100% / 10);
+   height: calc(100% / 10);
+   text-align: center;
+   border: 2px solid black;
+   
+
 
 }
 
+.bgcolor{
+    background-color:aqua;
+}
 
 
 
