@@ -10,13 +10,18 @@ Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed 
 const button = document.querySelector("button");
 const mainGrid = document.querySelector("section");
 
-
+//! Evento aggiunto al button, il quale una volta cliccato compaiono i numeri 
 button.addEventListener("click", function () {
   
     for (let i = 1; i <= 100; i++) {
     const square = createSquare();
     const randomNumber = i;
     square.innerHTML += `${randomNumber}`;
+
+    square.addEventListener('click', function(){
+        square.classList.add('bgcolor')
+        console.log(i)
+    })
   }
 });
 
