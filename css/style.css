@@ -20,8 +20,12 @@ main{
     
 }
 
+div>select{
+    padding: 0.25rem 1rem;
+}
+
 button{
-    padding: 1rem;
+    padding: 0.25rem 0.5rem;
     background-color: aqua;
 }
 
@@ -33,6 +37,7 @@ section{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    padding-top: 2rem;
     
 }
 
@@ -41,6 +46,7 @@ main>section>span{
    height: calc(100% / 10);
    text-align: center;
    border: 2px solid black;
+   padding-top: 1.5rem;
    
 
 
