@@ -17,13 +17,18 @@ button.addEventListener("click", function () {
     const square = createSquare();
     const randomNumber = i;
     square.innerHTML += `${randomNumber}`;
-
+     
     square.addEventListener('click', function(){
         square.classList.add('bgcolor')
         console.log(i)
+
+        
     })
   }
 });
+
+
+
 
 
 
