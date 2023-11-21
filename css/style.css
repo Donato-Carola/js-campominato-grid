@@ -49,5 +49,13 @@ main>section>span{
     background-color:aqua;
 }
 
+.removeList{
+    display: none;
+}
+
+.addList{
+    display:inline-block
+}
+
 
 
