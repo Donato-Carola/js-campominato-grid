@@ -54,7 +54,8 @@ function createSquare() {
 
 function removeElem(){
 
-    const elemRemove = document.querySelector('section')
+   /* const elemRemove = document.querySelector('section')
     elemRemove.classList.toggle('removeList')
-    return elemRemove;
+    return elemRemove;*/
+    location.reload();
 }
